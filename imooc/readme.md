@@ -1,0 +1,1 @@
+通过学习www.imooc.com/learn/75中“node+mongodb 建站攻略”教程，编写的电影发布展示网站。使用nodejs、bootstrap、express、mongodb、mongoose等语言、框架或模块。
