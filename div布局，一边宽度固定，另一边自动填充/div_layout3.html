@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>div_layout4</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.top{
+			background-color: red;
+			border:1px solid black;
+			margin: 0 0 5px;
+			height: 50px;
+		}
+
+		.sidebar{
+			position: absolute;
+			left: 0;
+			top: 57px;
+			width: 205px;
+			background-color: yellow;
+			border-left-width: 0;
+			height: 50px;
+		}
+
+		.main{
+			margin-left: 210px;
+			background-color: white;
+			border: 1px solid black;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">A（固定高度，宽度自适应）</div>
+	<div class="sidebar">B（高度任意，宽度为固定）</div>
+	<div class="main">C（高度任意，宽度为除开B之外的所有空间，自适应）</div>
+</body>
+</html>
