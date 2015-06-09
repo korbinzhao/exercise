@@ -2,7 +2,7 @@ var SVG_NS = 'http://www.w3.org/2000/svg';
 
 var svg = null,
 	shapeObj = null,
-	selected = null;//用户选中的属性
+	selected = null;//用户当前正编辑的svg对象
 
 var createShapeDiv = document.getElementById('create-shape');
 var shapeAttrsDiv = document.getElementById('shape-attrs');
@@ -90,7 +90,7 @@ function createShape(shapeName){
 
 		svg.appendChild(shapeObj);
 
-		selected = shapeObj;
+		selected = shapeObj;//将当前svg对象赋给selected
 
 		createShapeHandler(shapeName);
 }
